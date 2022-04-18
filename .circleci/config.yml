@@ -3,5 +3,7 @@ orbs:
   node: circleci/node@4.7
 workflows:
   sample:
-    jobs:
-- node/test
+    jobs: 
+      - node/run:
+          pkg-manager: npm
+          
